@@ -5,8 +5,8 @@ const BookQuestionSchema = new Schema({
 		type: Schema.Types.ObjectId,
 		ref: 'Book'
 	},
-	question: String,
-	description: String,
+	question_title: String,
+	question_info: String,
 	created: Date,
 	approval: {
 		type: Number,
