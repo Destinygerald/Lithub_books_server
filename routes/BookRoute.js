@@ -11,7 +11,7 @@ const Route = express.Router()
 
 Route.get('/', asyncWrapper(getAllBooks))
 Route.post('/new-book', asyncWrapper(addBook))
-Route.get('/:id', asyncWrapper(getBook))
+Route.get('/book/:id', asyncWrapper(getBook))
 Route.get('/search?book', asyncWrapper(bookSearch))
 
 module.exports = Route

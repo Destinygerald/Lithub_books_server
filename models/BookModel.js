@@ -6,6 +6,7 @@ const BookSchema = new Schema({
 	category: String,
 	image: String,
 	created: Date,
+	published: Boolean,
 	views: {
 		type: Number,
 		default: 0

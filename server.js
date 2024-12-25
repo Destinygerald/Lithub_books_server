@@ -11,7 +11,7 @@ app.use(cors({
 	credentials: true	
 }))
 
-app.use('/book', BookRoute)
+app.use('/books', BookRoute)
 app.use(errorHandler)
 
 module.exports = app
